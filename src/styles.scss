@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+// body {
+//   background: rgba(0, 0, 0, 0.6);   /* dark transparent */
+//   min-height: 100vh;
+// }
+
+
+body {
+  background: rgba(25, 118, 210, 0.08);  /* light blue tint */
+  min-height: 100vh;
+}
+
+body {
+  background: linear-gradient(
+    135deg,
+    rgba(128, 0, 128, 0.6),   /* purple */
+    rgba(255, 105, 180, 0.6)  /* pink */
+  );
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}

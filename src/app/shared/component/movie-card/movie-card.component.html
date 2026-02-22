@@ -1,0 +1,27 @@
+
+
+<div class="movie-card p-3 " *ngIf="movieObj">
+  <div class="poster">
+    <img [src]="movieObj.poster" alt="movie poster">
+  </div>
+
+  <div class="movie-info">
+    <h2>{{ movieObj.title }}</h2>
+    <p><strong>Year </strong> :{{ movieObj.year }}</p>
+    <p><strong>genre</strong> : {{ movieObj.genre }}</p>
+     <strong>Description :</strong>
+    <p class="movie-description">{{ movieObj.description }}</p>
+  </div>
+
+    <div class="d-flex justify-content-between">
+          <button 
+          (click)="onEdit()"
+          mat-mini-fab color="primary" aria-label="Example icon button with a delete icon">
+          <mat-icon>edit</mat-icon>
+        </button>
+
+         <button (click)="onRemove()" mat-mini-fab color="accent" aria-label="Example icon button with a delete icon">
+          <mat-icon>delete</mat-icon>
+        </button>
+  </div>
+</div>

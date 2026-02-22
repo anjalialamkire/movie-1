@@ -1,0 +1,13 @@
+
+
+   
+
+
+<p>
+    {{msg || 'Are You Sure, you want to remove the Course with id {{data}}'}}
+</p>
+
+<div class="d-flex justify-content-between">
+    <button (click)="onClose(true)" mat-raised-button color="primary">Yes</button>
+    <button  (click)="onClose(false)" mat-raised-button  color="accent">No</button>
+</div>
